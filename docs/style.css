@@ -9,6 +9,7 @@ html, body {
     rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/3629227/pexels-photo-3629227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
     object-fit:cover;
+    height: 100%;
 }
 #toptext{
     position: relative;
@@ -73,10 +74,58 @@ html, body {
 @media only screen and (min-width : 320px) and (max-device-width : 480px){
     .container{
         text-align: center;
+        width: 370px;
         margin: auto;
         left: 0;
         right: 0;
         position: relative;
+    }
+    #toptext{
+        font-size: 3rem;
+    }
+    #inputField{
+        width: 60%;
+        align-items: center;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+    /* Mobile phones/Tablets/Phablets ------- */
+@media only screen and (min-width : 600px) and (max-width : 800px){
+    .container{
+        text-align: center;
+        width: 470px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        position: relative;
+    }
+    #toptext{
+        font-size: 4rem;
+    }
+    #inputField{
+        width: 60%;
+        align-items: center;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+    /* Desktop/Laptops ----------- */
+@media only screen and (min-width : 1024px) and (max-width : 1200px) {
+    .container{
+        text-align: center;
+        width:500px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        position: relative;
+    }
+    #toptext{
+        font-size: 5rem;
     }
     #inputField{
         width: 60%;
